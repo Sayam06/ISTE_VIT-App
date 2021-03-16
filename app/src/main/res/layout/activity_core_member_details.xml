@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coreMemberDetails"
+    android:background="#050505">
+
+    <ImageView
+        android:id="@+id/memberImage"
+        android:layout_width="249dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="monospace"
+        android:inputType="textMultiLine"
+        android:text="Name: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/regnoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dobText"
+        android:layout_width="366dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="monospace"
+        android:text="DOB: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/domainText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mailText"
+        android:layout_width="362dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:text="E-Mail: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dobText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="366dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:text="Phone: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/mailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/regnoText"
+        android:layout_width="366dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="monospace"
+        android:text="Reg. No.: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/domainText"
+        android:layout_width="366dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="monospace"
+        android:text="Domain: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/whatsappTextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/whatsappTextButton"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="61dp"
+        android:background="#FFFFFF"
+        android:fontFamily="monospace"
+        android:text="Message On Whatsapp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

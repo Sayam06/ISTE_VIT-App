@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "939046216472",
+    "firebase_url": "https://iste-vit-default-rtdb.firebaseio.com",
+    "project_id": "iste-vit",
+    "storage_bucket": "iste-vit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939046216472:android:6c5e40883ce4e77597b46d",
+        "android_client_info": {
+          "package_name": "com.sayam.iste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939046216472-5naptrghpc9h20vl0hdctis6a66gic21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiqAp2Yda78sOp8fVwR5Wc0XcYNGHEExQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939046216472-5naptrghpc9h20vl0hdctis6a66gic21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

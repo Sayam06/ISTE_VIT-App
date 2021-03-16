@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".boardLogin"
+    android:background="#050505">
+
+    <ImageView
+        android:id="@+id/coreLoginLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/coreWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:text="Hello ISTE Core Member!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/coreSignInText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coreLoginLogo" />
+
+    <TextView
+        android:id="@+id/coreSignInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="43dp"
+        android:fontFamily="monospace"
+        android:text="Login to continue: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/coreUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/coreUsername"
+        android:layout_width="261dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint=" Login ID"
+        android:inputType="textPersonName"
+        android:paddingLeft="6sp"
+        android:paddingRight="6sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C5C1C1"
+        app:layout_constraintBottom_toTopOf="@+id/corePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/corePassword"
+        android:layout_width="261dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:paddingLeft="6sp"
+        android:paddingRight="6sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C5C1C1"
+        app:layout_constraintBottom_toTopOf="@+id/coreLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/coreLogin"
+        android:layout_width="109dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FFFFFF"
+        android:fontFamily="monospace"
+        android:onClick="cLogin"
+        android:text="LOGIN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/coreLoginError"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/coreLoginError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="153dp"
+        android:fontFamily="monospace"
+        android:text="Error Message Here"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
